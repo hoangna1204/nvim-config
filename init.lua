@@ -149,9 +149,14 @@ lazy.setup({
 	{ 'lewis6991/gitsigns.nvim' },
 	{ 'sindrets/diffview.nvim' },
 	{
-    "iamcco/markdown-preview.nvim",
-    ft = "markdown",
-    build = ":call mkdp#util#install()",
+    'iamcco/markdown-preview.nvim',
+    ft = 'markdown',
+    build = ':call mkdp#util#install()',
+  },
+	{
+      'akinsho/toggleterm.nvim',
+      tag = "*",
+      config = true
   },
 })
 
@@ -223,3 +228,4 @@ require 'undotree-config'
 require 'indentline-config'
 require 'git-config'
 require 'lsp-config'
+require 'toggleterm-config'
