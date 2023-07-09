@@ -95,6 +95,7 @@ lazy.opts = {}
 
 lazy.setup({
   { 'folke/tokyonight.nvim' },
+	{ 'metalelf0/jellybeans-nvim', dependencies = { 'rktjmp/lush.nvim' } },
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 	{ 'folke/which-key.nvim'},
 	{ 'akinsho/bufferline.nvim', dependencies = {'nvim-tree/nvim-web-devicons'} },
@@ -169,8 +170,8 @@ lazy.setup({
 -- Colorscheme
 ---
 vim.opt.termguicolors = true
-vim.cmd.colorscheme('tokyonight')
-
+--vim.cmd.colorscheme('tokyonight')
+vim.cmd.colorscheme('jellybeans-nvim')
 ---
 -- Bufferline
 ---
